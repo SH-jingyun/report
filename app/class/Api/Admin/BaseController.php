@@ -95,7 +95,7 @@ Class BaseController extends Controller {
                 array( 'resName' => '广告位管理', 'resKey'=> 'ad-position'),
                 array( 'resName' => '用户分群管理', 'resKey'=> 'ad-user-group'),
                 array( 'resName' => '广告策略管理', 'resKey'=> 'ad-strategy'),
-                array( 'resName' => '广告代码位管理', 'resKey'=> 'ad-code'),
+                array( 'resName' => '广告代码位管理', 'resKey'=> 'ad-strategy-details/1'),
             )),
         ));
     }
