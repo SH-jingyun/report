@@ -22,7 +22,7 @@ Class AdController extends Controller {
 //	插屏广告:interactionExpress
 //	Banner:banner
 
-        $sql = 'SELECT position_id, ad_source source, ad_placement_id placement_id, ad_unit_id unit_id, position_type type, strategy_id strategyId FROM ad_position LEFT JOIN ad_strategy USING(position_id) LEFT JOIN ad_position_type USING(position_type_id) LEFT JOIN ad_ad_code USING(strategy_id) WHERE app_id = 10003 AND group_id = 1';
+        $sql = 'SELECT position_id, ad_source source, ad_placement_id placement_id, ad_unit_id unit_id, position_type type, strategy_id FROM ad_position LEFT JOIN ad_strategy USING(position_id) LEFT JOIN ad_position_type USING(position_type_id) LEFT JOIN ad_ad_code USING(strategy_id) WHERE app_id = 10003 AND group_id = 1';
 //        $prepareSql = $this->locator->db2->prepare($sql);
 //        $prepareSql->execute($dataArr);
 //        $result = $prepareSql->fetchAll(\PDO::FETCH_GROUP);
