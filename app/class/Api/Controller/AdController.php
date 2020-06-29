@@ -26,7 +26,7 @@ Class AdController extends Controller {
 //        $prepareSql = $this->locator->db2->prepare($sql);
 //        $prepareSql->execute($dataArr);
 //        $result = $prepareSql->fetchAll(\PDO::FETCH_GROUP);
-        $list = $this->db->prepare->fetchAll(\PDO::FETCH_GROUP);
+        $list = $this->locator->db->prepare($sql)->fetchAll(\PDO::FETCH_GROUP);
         var_dump($list);
         return array('list' => $list, 'cache' => array(10000, 10001));
 
