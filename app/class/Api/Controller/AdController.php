@@ -30,7 +30,7 @@ Class AdController extends Controller {
         $prepareSql->execute();
         $list = $prepareSql->fetchAll(\PDO::FETCH_GROUP);
 
-        $sql = 'SELECT position_id WHERE app_id = 10003 AND is_cache = 1';
+        $sql = 'SELECT position_id FROM ad_position WHERE app_id = 10003 AND is_cache = 1';
         $cache = $this->locator->db->getColumn($sql);
 //        var_dump($list);
         return array('list' => $list, 'cache' => $cache);
