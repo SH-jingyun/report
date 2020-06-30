@@ -32,6 +32,12 @@ if (file_exists(CONFIG_DIR . 'config.private.php')) {
 !defined('DB_PASSWORD') && define('DB_PASSWORD', '123456');
 !defined('DB_DATABASE') && define('DB_DATABASE', 'jy_ad');
 
+!defined('DB_HOST_WALKS') && define('DB_HOST_WALKS', 'mysql');
+!defined('DB_PORT_WALKS') && define('DB_PORT_WALKS', 3306);
+!defined('DB_USERNAME_WALKS') && define('DB_USERNAME_WALKS', 'root');
+!defined('DB_PASSWORD_WALKS') && define('DB_PASSWORD_WALKS', '123456');
+!defined('DB_DATABASE_WALKS') && define('DB_DATABASE_WALKS', 'jy_walk');
+
 !defined('JY_WALK_ADMIN_USER') && define('JY_WALK_ADMIN_USER', 'username');
 !defined('JY_WALK_ADMIN_PASSWORD') && define('JY_WALK_ADMIN_PASSWORD', '123456');
 
