@@ -50,6 +50,13 @@ Class Func {
         return $db;
     }
 
+    public static function getDbWalks () {
+        $db = new NewPdo('mysql:dbname=' . DB_DATABASE_WALKS . ';host=' . DB_HOST_WALKS . ';port=' . DB_PORT_WALKS, DB_USERNAME_WALKS, DB_PASSWORD_WALKS);
+        $db->exec("SET time_zone = '+8:00'");
+        $db->setAttribute(\PDO::ATTR_DEFAULT_FETCH_MODE, \PDO::FETCH_ASSOC);
+        return $db;
+    }
+
     public static function getRedis () {
         $redis = new \Redis();
         $redis->pconnect('redis', 6379);
