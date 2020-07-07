@@ -90,6 +90,21 @@ Class BaseController extends Controller {
                     array( 'resName' => '广告频闭', 'resKey'=> 'dogs-version-ad'),
                 )),
             )),
+            array('id' => '4', 'resName' => '走路多多', 'resKey'=> 'menu_zou', 'resIcon'=> 'xtxg', 'children' => array(
+                array( 'resName' => '首页', 'resKey'=> 'zou-index'),
+                array( 'resName' => '运营位管理', 'resKey'=> 'zou-ad'),
+                array( 'id' => '4-1', 'resName' => '用户管理', 'resKey'=> 'menu_stepcounter_user', 'children' => array(
+                    array( 'resName' => '用户明细', 'resKey'=> 'zou-user'),
+                    array( 'resName' => '用户提现', 'resKey'=> 'zou-withdraw'),
+                    array( 'resName' => '用户反馈', 'resKey'=> 'zou-feedback'),
+                    array( 'resName' => '用户邀请', 'resKey'=> 'zou-invited'),
+                )),
+                array( 'id' => '4-2', 'resName' => '系统管理', 'resKey'=> 'menu_stepcounter_system', 'children' => array(
+                    array( 'resName' => '版本升级', 'resKey'=> 'zou-version'),
+                    array( 'resName' => '广告频闭', 'resKey'=> 'zou-version-ad'),
+                    array( 'resName' => '三方错误码', 'resKey'=> 'zou-sdk-error'),
+                )),
+            )),
             array('id' => '3', 'resName' => '广告配置', 'resKey'=> 'menu_ad', 'resIcon'=> 'xtxg', 'children' => array(
                 array( 'resName' => '应用列表', 'resKey'=> 'ad-app'),
                 array( 'resName' => '广告位管理', 'resKey'=> 'ad-position'),
