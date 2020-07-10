@@ -106,11 +106,12 @@ Class BaseController extends Controller {
                 )),
             )),
             array('id' => '3', 'resName' => '广告配置', 'resKey'=> 'menu_ad', 'resIcon'=> 'xtxg', 'children' => array(
-                array( 'resName' => '应用列表', 'resKey'=> 'ad-app'),
-                array( 'resName' => '广告位管理', 'resKey'=> 'ad-position'),
-                array( 'resName' => '用户分群管理', 'resKey'=> 'ad-user-group'),
-                array( 'resName' => '广告策略管理', 'resKey'=> 'ad-strategy'),
-                array( 'resName' => '广告代码位管理', 'resKey'=> 'ad-strategy-details/1'),
+                array( 'resName' => '开发中', 'resKey'=> 'ad_waiting'),
+//                array( 'resName' => '应用列表', 'resKey'=> 'ad-app'),
+//                array( 'resName' => '广告位管理', 'resKey'=> 'ad-position'),
+//                array( 'resName' => '用户分群管理', 'resKey'=> 'ad-user-group'),
+//                array( 'resName' => '广告策略管理', 'resKey'=> 'ad-strategy'),
+//                array( 'resName' => '广告代码位管理', 'resKey'=> 'ad-strategy-details/1'),
             )),
         ));
     }
