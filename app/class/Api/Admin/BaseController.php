@@ -79,17 +79,17 @@ Class BaseController extends Controller {
                     array( 'resName' => '三方错误码', 'resKey'=> 'sdk-error'),
                 )),
             )),
-            array('id' => '2', 'resName' => '狗狗世界', 'resKey'=> 'menu_dogsworld', 'resIcon'=> 'moduleManage', 'children' => array(
-                array( 'id' => '2-1', 'resName' => '用户管理', 'resKey'=> 'menu_dogsworld_user', 'children' => array(
-                    array( 'resName' => '内部用户', 'resKey'=> 'dogs-interior'),
-                    array( 'resName' => '用户提现', 'resKey'=> 'dogs-withdraw'),
-                    array( 'resName' => '用户列表', 'resKey'=> 'dogs-user'),
-                )),
-                array( 'id' => '2-2', 'resName' => '系统管理', 'resKey'=> 'menu_dogsworld_system', 'children' => array(
-                    array( 'resName' => '版本升级', 'resKey'=> 'dogs-version'),
-                    array( 'resName' => '广告频闭', 'resKey'=> 'dogs-version-ad'),
-                )),
-            )),
+//            array('id' => '2', 'resName' => '狗狗世界', 'resKey'=> 'menu_dogsworld', 'resIcon'=> 'moduleManage', 'children' => array(
+//                array( 'id' => '2-1', 'resName' => '用户管理', 'resKey'=> 'menu_dogsworld_user', 'children' => array(
+//                    array( 'resName' => '内部用户', 'resKey'=> 'dogs-interior'),
+//                    array( 'resName' => '用户提现', 'resKey'=> 'dogs-withdraw'),
+//                    array( 'resName' => '用户列表', 'resKey'=> 'dogs-user'),
+//                )),
+//                array( 'id' => '2-2', 'resName' => '系统管理', 'resKey'=> 'menu_dogsworld_system', 'children' => array(
+//                    array( 'resName' => '版本升级', 'resKey'=> 'dogs-version'),
+//                    array( 'resName' => '广告频闭', 'resKey'=> 'dogs-version-ad'),
+//                )),
+//            )),
             array('id' => '4', 'resName' => '走路多多', 'resKey'=> 'menu_zou', 'resIcon'=> 'xtxg', 'children' => array(
                 array( 'resName' => '首页', 'resKey'=> 'zou-index'),
                 array( 'resName' => '运营位管理', 'resKey'=> 'zou-ad'),
