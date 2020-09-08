@@ -105,13 +105,23 @@ Class BaseController extends Controller {
                     array( 'resName' => '三方错误码', 'resKey'=> 'zou-sdk-error'),
                 )),
             )),
+            array('id' => '5', 'resName' => '趣走路', 'resKey'=> 'menu_stepcounter', 'resIcon'=> 'xtxg', 'children' => array(
+                array( 'resName' => '首页', 'resKey'=> 'qzl-index'),
+                array( 'resName' => '运营位管理', 'resKey'=> 'qzl-ad'),
+                array( 'id' => '5-1', 'resName' => '用户管理', 'resKey'=> 'menu_stepcounter_user', 'children' => array(
+                    array( 'resName' => '用户明细', 'resKey'=> 'qzl-user'),
+                    array( 'resName' => '用户提现', 'resKey'=> 'qzl-withdraw'),
+                    array( 'resName' => '用户反馈', 'resKey'=> 'qzl-feedback'),
+                    array( 'resName' => '用户邀请', 'resKey'=> 'qzl-invited'),
+                )),
+                array( 'id' => '5-2', 'resName' => '系统管理', 'resKey'=> 'menu_stepcounter_system', 'children' => array(
+                    array( 'resName' => '版本升级', 'resKey'=> 'qzl-version'),
+                    array( 'resName' => '广告频闭', 'resKey'=> 'qzl-version-ad'),
+                    array( 'resName' => '三方错误码', 'resKey'=> 'qzl-sdk-error'),
+                )),
+            )),
             array('id' => '3', 'resName' => '报表', 'resKey'=> 'menu_ad', 'resIcon'=> 'xtxg', 'children' => array(
                 array( 'resName' => 'ROI', 'resKey'=> 'report-roi'),
-//                array( 'resName' => '应用列表', 'resKey'=> 'ad-app'),
-//                array( 'resName' => '广告位管理', 'resKey'=> 'ad-position'),
-//                array( 'resName' => '用户分群管理', 'resKey'=> 'ad-user-group'),
-//                array( 'resName' => '广告策略管理', 'resKey'=> 'ad-strategy'),
-//                array( 'resName' => '广告代码位管理', 'resKey'=> 'ad-strategy-details/1'),
             )),
         ));
     }
