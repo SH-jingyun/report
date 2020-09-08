@@ -1,8 +1,7 @@
 <?php
 require_once __DIR__ . '/init.inc.php';
-//$redis = new \Redis();
-//$redis->pconnect('redis', 6379);
-//$redis->select(1);
+
+echo 'ad';exit;
 //$redis->setOption(\Redis::OPT_SERIALIZER, \Redis::SERIALIZER_PHP);
 ////$array=array('tank'=>'1', 'zhang'=>'2', 'ying'=>'3', 'test'=>'4');
 ////$redis->mset($array);

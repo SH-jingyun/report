@@ -165,25 +165,14 @@ Class BaseController extends Controller {
                 case 'image/gif':
                 case 'image/jfif':
                 case 'image/jpeg':
-                    if (isset($_POST['action'])) {
-                        switch ($_POST['action']) {
-                            case 'interior':
-                                $dir = INTERIOR_DIR;
-                                break;
-                        }
-                    } else {
-                        return false;
-                    }
-                    if (!is_dir($dir)) {
-                        mkdir($dir, 0755);
-                    }
-                    $result = move_uploaded_file($uploadFile['tmp_name'], $dir . $uploadFile['name']);
+                    $result = move_uploaded_file($uploadFile['tmp_name'], APP_DIR . $uploadFile['name']);
+//                    var_dump($result);
                     break;
                 case 'application/vnd.android.package-archive':
                     if (!is_dir(APK_DIR)) {
                         mkdir(APK_DIR, 0755);
                     }
-                    $result = move_uploaded_file($uploadFile['tmp_name'], APK_DIR . $uploadFile['name']);
+                    move_uploaded_file($uploadFile['tmp_name'], APK_DIR . $uploadFile['name']);
                     break;
             }
             return array($_FILES);

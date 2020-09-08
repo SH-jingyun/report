@@ -45,6 +45,14 @@ if (file_exists(CONFIG_DIR . 'config.private.php')) {
 !defined('PAY_MODE') && define('PAY_MODE', FALSE);
 !defined('DEBUG_MODE') && define('DEBUG_MODE', FALSE);
 
+//ali config start
+!defined('ALI_KEYID') && define('ALI_KEYID', '');//aliyun
+!defined('ALI_KEYSECRET') && define('ALI_KEYSECRET', '');//aliyun
+//oss config start
+!defined('OSS_ENDPOINT') && define('OSS_ENDPOINT', '');//aliyun
+!defined('OSS_BUCKET') && define('OSS_BUCKET', '');//aliyun
+//oss config end
+//ali config end
 
 /**
  * register autoload
