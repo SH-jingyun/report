@@ -15,6 +15,7 @@ Class BaseController extends Controller {
                 }
             }
         }
+        return array('status' => 'error', 'data' => '', 'msg' => '登陆失败');
 //        $this->mode = 'POST';
 //        $sql = 'SELECT * FROM t_order LIMIT 1';
 //        var_dump($this->db->getRow($sql));
@@ -24,7 +25,6 @@ Class BaseController extends Controller {
 //  },
 //  msg: '操作成功',
 //  status: 1,
-        throw new \Exception("Login failure");
     }
 
     public function menuAction() {
