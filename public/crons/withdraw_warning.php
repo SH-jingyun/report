@@ -2,6 +2,7 @@
 
 require_once __DIR__ . '/../init.inc.php';
 
+$hour = date('H:00', strtotime('-1 hour'));
 $startTime = date('Y-m-d H:00:00', strtotime('-1 hour'));
 $endTime = date('Y-m-d H:59:59', strtotime('-1 hour'));
 
@@ -36,6 +37,6 @@ foreach ($appList as $info) {
 $html .= '</body>
 </html>';
 $mail = new \Core\Mail();
-$mail->send('zjf580@163.com', (ENV_PRODUCTION ? '' : '测试-') . '定时提现邮件', $html);
+$mail->send('zjf580@163.com', (ENV_PRODUCTION ? '' : '测试-') . $hour . '定时提现邮件', $html);
 echo 'done' . PHP_EOL;
 
