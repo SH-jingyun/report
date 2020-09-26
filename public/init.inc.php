@@ -38,6 +38,12 @@ if (file_exists(CONFIG_DIR . 'config.private.php')) {
 !defined('DB_PASSWORD_WALKS') && define('DB_PASSWORD_WALKS', '123456');
 !defined('DB_DATABASE_WALKS') && define('DB_DATABASE_WALKS', 'jy_walk');
 
+!defined('DB_HOST_ZOU') && define('DB_HOST_ZOU', 'mysql');
+!defined('DB_PORT_ZOU') && define('DB_PORT_ZOU', 3306);
+!defined('DB_USERNAME_ZOU') && define('DB_USERNAME_ZOU', 'root');
+!defined('DB_PASSWORD_ZOU') && define('DB_PASSWORD_ZOU', '123456');
+!defined('DB_DATABASE_ZOU') && define('DB_DATABASE_ZOU', 'jy_walk');
+
 !defined('JY_WALK_ADMIN_USER') && define('JY_WALK_ADMIN_USER', 'username');
 !defined('JY_WALK_ADMIN_PASSWORD') && define('JY_WALK_ADMIN_PASSWORD', '123456');
 
