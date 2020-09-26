@@ -4,7 +4,7 @@ require_once __DIR__ . '/../init.inc.php';
 
 $hour = date('H:00', strtotime('-1 hour'));
 $startTime = date('Y-m-d H:00:00', strtotime('-1 hour'));
-$endTime = date('Y-m-d H:59:59', strtotime('-1 hour'));
+$endTime = date('Y-m-d H:00:00');
 
 $html = '<html lang="en">
 <head>
