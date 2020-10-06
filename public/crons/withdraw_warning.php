@@ -41,10 +41,13 @@ foreach ($appList as $info) {
     $sql = 'SELECT COUNT(withdraw_id) FROM t_withdraw WHERE create_time >= ? AND create_time < ?';
     $total = $db->getOne($sql, $startTime, $endTime);
 
-    $sql = 'SELECT COUNT(withdraw_id) total, COUNT(IF(withdraw_status="success", 1, 0)) success FROM t_withdraw WHERE create_time >= ? AND create_time < ? AND withdraw_amount = 1';
-    $total_1 = $db->getRow($sql, $startTime, $endTime);
+    $sql = 'SELECT COUNT(withdraw_id) FROM t_withdraw WHERE create_time >= ? AND create_time < ? AND withdraw_amount = 1';
+    $total_1 = $db->getOne($sql, $startTime, $endTime);
 
-    $html .= sprintf($str, $info['name'], $total, $total_1['total'], $total_1['success']);
+    $sql = 'SELECT COUNT(withdraw_id) FROM t_withdraw WHERE change_time >= ? AND change_time < ? AND withdraw_amount = 1 AND withdraw_status="success"';
+    $total_1_success = $db->getOne($sql, $startTime, $endTime);
+
+    $html .= sprintf($str, $info['name'], $total, $total_1, $total_1_success);
 }
 
 $html .= '</body>
